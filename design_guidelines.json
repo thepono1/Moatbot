@@ -1,0 +1,141 @@
+{
+  "project_name": "MoatBot",
+  "identity": {
+    "name": "MoatBot",
+    "description": "Autonomous Operations Platform for Multi-Agent Systems",
+    "tone": "Command Center, Technical, Precise, Reliable",
+    "visual_mood": "Cyber-Physical, High-Contrast, Data-Dense"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Space Grotesk, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl font-bold tracking-tight lg:text-5xl",
+      "h2": "text-3xl font-semibold tracking-tight first:mt-0",
+      "h3": "text-2xl font-semibold tracking-tight",
+      "h4": "text-xl font-semibold tracking-tight",
+      "p": "leading-7 [&:not(:first-child)]:mt-6",
+      "blockquote": "mt-6 border-l-2 pl-6 italic",
+      "list": "my-6 ml-6 list-disc [&>li]:mt-2",
+      "lead": "text-xl text-muted-foreground",
+      "large": "text-lg font-semibold",
+      "small": "text-sm font-medium leading-none",
+      "muted": "text-sm text-muted-foreground"
+    },
+    "imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');"
+    ]
+  },
+  "colors": {
+    "theme_mode": "dark",
+    "palette": {
+      "background": "hsl(224 71% 4%)",
+      "foreground": "hsl(213 31% 91%)",
+      "card": "hsl(224 71% 4%)",
+      "card_foreground": "hsl(213 31% 91%)",
+      "popover": "hsl(224 71% 4%)",
+      "popover_foreground": "hsl(215 20.2% 65.1%)",
+      "primary": "hsl(263.4 70% 50.4%)",
+      "primary_foreground": "hsl(210 40% 98%)",
+      "secondary": "hsl(222.2 47.4% 11.2%)",
+      "secondary_foreground": "hsl(210 40% 98%)",
+      "muted": "hsl(223 47% 11%)",
+      "muted_foreground": "hsl(215.4 16.3% 56.9%)",
+      "accent": "hsl(216 34% 17%)",
+      "accent_foreground": "hsl(210 40% 98%)",
+      "destructive": "hsl(0 63% 31%)",
+      "destructive_foreground": "hsl(210 40% 98%)",
+      "border": "hsl(216 34% 17%)",
+      "input": "hsl(216 34% 17%)",
+      "ring": "hsl(263.4 70% 50.4%)",
+      "success": "hsl(142 71% 45%)",
+      "warning": "hsl(48 96% 53%)",
+      "error": "hsl(0 84% 60%)"
+    },
+    "usage_rules": {
+      "gradients": "Do NOT use gradients for backgrounds. Use solid colors or subtle noise textures.",
+      "glassmorphism": "Use backdrop-blur-md with bg-background/80 for sticky headers and overlays.",
+      "status_indicators": "Use solid 8px w/h rounded-full circles for status. Green=Active, Red=Error, Amber=Warning, Gray=Inactive."
+    }
+  },
+  "layout": {
+    "spacing_scale": "Tailwind default",
+    "grid_system": "12-column grid. Use 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4' for dashboard widgets.",
+    "container": "container mx-auto px-4 md:px-6",
+    "sidebar": "Fixed width 240px on desktop, collapsible on mobile.",
+    "header": "Sticky top, h-16, border-b border-border/40."
+  },
+  "components": {
+    "cards": {
+      "style": "rounded-xl border border-border bg-card text-card-foreground shadow-sm",
+      "hover": "hover:bg-accent/50 transition-colors duration-200"
+    },
+    "buttons": {
+      "default": "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+      "variants": {
+        "primary": "bg-primary text-primary-foreground hover:bg-primary/90",
+        "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        "outline": "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+        "ghost": "hover:bg-accent hover:text-accent-foreground"
+      }
+    },
+    "inputs": {
+      "style": "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    },
+    "tables": {
+      "style": "w-full caption-bottom text-sm",
+      "header": "[&_tr]:border-b",
+      "row": "border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted",
+      "cell": "p-4 align-middle [&:has([role=checkbox])]:pr-0"
+    },
+    "charts": {
+      "library": "Recharts (via Shadcn Charts)",
+      "tooltip_style": "rounded-lg border bg-background p-2 shadow-sm",
+      "colors": ["#8884d8", "#82ca9d", "#ffc658", "#ff8042"]
+    }
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "card": "shadow-sm",
+      "dropdown": "shadow-md",
+      "modal": "shadow-lg"
+    },
+    "borders": {
+      "default": "1px solid hsl(var(--border))",
+      "focus": "2px solid hsl(var(--ring))"
+    },
+    "radius": {
+      "default": "0.5rem",
+      "small": "0.3rem",
+      "large": "0.75rem"
+    },
+    "animations": {
+      "hover": "transition-all duration-200 ease-in-out",
+      "fade_in": "animate-in fade-in zoom-in duration-300"
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure text contrast ratio is at least 4.5:1 against background.",
+    "focus_states": "Visible focus ring on all interactive elements.",
+    "aria_labels": "Required for all icon-only buttons."
+  },
+  "image_urls": {
+    "login_background": "https://images.pexels.com/photos/17485657/pexels-photo-17485657.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "logo_placeholder": "https://ui-avatars.com/api/?name=MoatBot&background=6366f1&color=fff&size=128"
+  },
+  "universal_guidelines": [
+    "Do NOT apply universal transition (transition: all).",
+    "Do NOT center align the app container (.App { text-align: center; }).",
+    "Use data-testid attributes for all interactive elements.",
+    "Prefer named exports for components.",
+    "Use Sonner for toast notifications.",
+    "Implement 'The Deep Void' theme by overriding CSS variables in index.css.",
+    "Ensure all text is legible with high contrast.",
+    "Use 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3' for responsive layouts.",
+    "Status indicators must be clearly visible and color-coded (Green/Amber/Red).",
+    "Audit logs must use monospace font for data fields."
+  ]
+}
